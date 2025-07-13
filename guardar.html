@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/registro_visitas.css">
-    <link rel="stylesheet" href="/css/menu_desplegable.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/registro_visitas.css">
+    <link rel="stylesheet" href="src/css/menu_desplegable.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,42 +14,53 @@
     <!---------------- MENU DESPLEGABLE ---------------->
 
     <div class="menu-desplegable">
+
+        <div class="btn-cerrar-mnu-desplegable" >
+            <span>Claro Chile — Av. Salto #100</span>
+            <button id="btn-cerrar-menu"><img class="icono-mnu-desplegable" src="/src/icon/close-outline.svg" alt=""></button>
+        </div>
+
+        <hr>
         
-        <div id="btn-guardar-mnu-desplegable" class="btn-mnu-desplegable" >
-            <button><span>Guardar</span>
-                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
-            </button>
-            
-        </div>
-
-        <div id="btn-buscar-por-nombre-mnu-desplegable" class="btn-mnu-desplegable">
-            <button><span>Buscar por nombre </span>
-                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+        <div class="btn-mnu-desplegable" >
+            <button id="btn-guardar-mnu-desplegable"><span>Guardar</span>
+                <img class="icono-mnu-desplegable" src="/src/icon/chevron-forward-outline.svg" alt="">
             </button>
         </div>
 
-        <div id="btn-buscar-por-rut-mnu-desplegable" class="btn-mnu-desplegable">
-            <button><span>Buscar por rut </span>
-                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+        <div class="btn-mnu-desplegable">
+            <button id="btn-buscar-por-nombre-mnu-desplegable"><span>Buscar por nombre </span>
+                <img class="icono-mnu-desplegable" src="/src/icon/chevron-forward-outline.svg" alt="">
             </button>
         </div>
 
-        <div id="btn-listar-por-empresa-mnu-desplegable" class="btn-mnu-desplegable">
-            <button><span>Listar por empresa </span>
-                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+        <div class="btn-mnu-desplegable">
+            <button id="btn-buscar-por-rut-mnu-desplegable"><span>Buscar por rut </span>
+                <img class="icono-mnu-desplegable" src="/src/icon/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+        <div class="btn-mnu-desplegable">
+            <button id="btn-listar-por-empresa-mnu-desplegable"><span>Listar por empresa </span>
+                <img class="icono-mnu-desplegable" src="/src/icon/chevron-forward-outline.svg" alt="">
             </button>
         </div>
         
         <hr>
     </div>
 
+    <!---------------- LOGO CLARO ---------------->
+
+    <div class="contain-logo-claro">
+        <img src="/src/img/logo_claro.png" alt="Logo Claro" width="150px">
+    </div>
+
     <!---------------- BTN MENU DESPLEGABLE ---------------->
+    <div class="contenedor-menu">
+        <button id="btn-menu" class="btn-menu-desplegable" ><img class="icono-menu" src="/src/icon/reorder-four-outline.svg" alt=""></button>
+    </div>
 
     <div class="contain-main">
-
-        <div class="contenedor-menu">
-            <button id="btn-menu" class="btn-menu-desplegable" ><img class="icono-menu" src="/icon/reorder-four-outline.svg" alt=""></button>
-        </div>
 
         <!---------------- FORMULARIO DE ENTRADA ---------------->
 
@@ -59,28 +70,28 @@
                 
                 <div class="fila"> 
                     <label>Nombre</label>
-                    <input type="text" required="true">
+                    <input id="input-nombre" type="text" required="true">
                 </div>
                 <div class="fila"> 
                     <label>Apellido</label>
-                    <input type="text" required="true">
+                    <input id="input-apellido" type="text" required="true">
                 </div>
                 <div class="fila"> 
                     <label>Rut</label>
-                    <input type="text" required="true">
+                    <input id="input-rut" type="text" required="true">
                 </div>
                 <div class="fila"> 
                     <label>Empresa</label>
-                    <input type="text" required="true">
+                    <input id="input-empresa" type="text" required="true">
                 </div>
                 <div class="fila">
                     <label>ID</label>
-                    <input type="text" required="true">
+                    <input id="input-ID" type="number" required="true">
                 </div>
                 
             </div>
             <div class="d-grid gap-2 d-md-block">
-                <button id="btn-guardar" class="btn btn-primary" type="submit">Guardar</button>
+                <button id="btn-guardar-form" class="btn btn-primary" type="button">Guardar</button>
             </div>
 
         </div>
@@ -124,9 +135,8 @@
                 </tbody>
             </table>
         </div>
-
     </div>
-
-    
 </body>
+<script src="/src/js/mnu_desplegable.js"></script>
+<script src="src/js/guardarUsuario.js"></script>
 </html>

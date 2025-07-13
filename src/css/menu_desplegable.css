@@ -1,18 +1,23 @@
 
 @media screen and (min-width: 1024px) {
 
-
     .menu-desplegable {
         flex-shrink: 0;
+        position: fixed;             /* SUPERPONE el menú */
+        z-index: 1000;
 
         width: 300px;
         height: 100%;
 
         padding: 12px;
+        border: 1px;
+        border-radius: 4px;
 
         background: #AFC6C9;
         background: linear-gradient(90deg, rgba(175, 198, 201, 1) 0%, rgba(175, 198, 201, 1) 50%, rgba(175, 198, 201, 1) 100%);
-
+        
+        transform: translateX(-100%);     /* Oculto inicialmente */
+        transition: transform 0.5s ease;  /* Animación siempre activa */
     }
 
     .icono-mnu-desplegable {
@@ -22,10 +27,44 @@
         background-repeat: no-repeat;
     }
 
+    .contenedor-menu button {
+        margin-top: 40%;
+    }
+
     hr {
         border: none;
         border-top: 2px solid #6e6e6e;
         margin: 20px 0;
+    }
+
+    .btn-cerrar-mnu-desplegable {
+        width: 280px;
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        margin-bottom: 8px;
+    }
+
+    .btn-cerrar-mnu-desplegable button{
+        all: unset;
+
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px;
+        border-radius: 8px;
+    }
+
+    .btn-cerrar-mnu-desplegable button:hover{
+        background-color: rgb(228, 228, 228);
+        transition: 0.3s;
     }
 
     .btn-mnu-desplegable {
@@ -35,7 +74,7 @@
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-
+        
         margin-bottom: 8px;
     }
 
@@ -62,6 +101,7 @@
     .btn-mnu-desplegable button:hover {
         
         background-color: rgb(228, 228, 228);
+        transition: 0.3s;
 
     }
 

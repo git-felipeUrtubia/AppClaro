@@ -2,6 +2,11 @@
 
 @media screen and (min-width: 1024px) {
 
+    .contain-logo-claro {
+        width: 150px;
+        height: auto;
+    }
+
     .contain-main {
         display: flex;
         justify-content: center;
