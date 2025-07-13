@@ -1,18 +1,16 @@
-body {
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: flex-start; /* ✅ evita que se estiren igualando altura */
-
-    background: #cfdae6;
-    background: linear-gradient(90deg, rgba(207, 218, 230, 1) 0%, rgba(207, 218, 230, 1) 50%, rgba(207, 218, 230, 1) 100%);
-}
 
 
 @media screen and (min-width: 1024px) {
 
+    .contain-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: start;
+        gap: 40px;
+    }
+
+    /* ------------------------- STYLES FORMULARIO -------------------------*/
 
     .contain-data {
         width: 500px;
@@ -27,7 +25,7 @@ body {
         background: #ebebeb;
         background: linear-gradient(90deg, rgba(235, 235, 235, 1) 0%, rgba(235, 235, 235, 1) 50%, rgba(235, 235, 235, 1) 100%);
     }
-    /* ------------------------- STYLES FORMULARIO -------------------------*/
+    
     .formulario {
         width: 80%;
         display: flex;
@@ -56,3 +54,32 @@ body {
     }
 
 }
+
+/* ------------------------- STYLES BTN MENU DESPLEGABLE -------------------------*/
+
+.icono-menu {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn-menu-desplegable {
+    all: unset;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px;
+    border-radius: 8px;
+}
+
+.btn-menu-desplegable:hover {
+    background-color: rgb(170, 170, 170);
+    transition: 0.5s;
+}
+

@@ -1,187 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/registro_visitas.css">
+    <link rel="stylesheet" href="/css/menu_desplegable.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="contain-data">
 
-        <div class="formulario">
-            
-            <div class="fila"> 
-                <label>Nombre</label>
-                <input type="text" required="true">
-            </div>
-            <div class="fila"> 
-                <label>Apellido</label>
-                <input type="text" required="true">
-            </div>
-            <div class="fila"> 
-                <label>Rut</label>
-                <input type="text" required="true">
-            </div>
-            <div class="fila"> 
-                <label>Empresa</label>
-                <input type="text" required="true">
-            </div>
-            <div class="fila">
-                <label>ID</label>
-                <input type="text" required="true">
-            </div>
+    <!---------------- MENU DESPLEGABLE ---------------->
+
+    <div class="menu-desplegable">
+        
+        <div id="btn-guardar-mnu-desplegable" class="btn-mnu-desplegable" >
+            <button><span>Guardar</span>
+                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+            </button>
             
         </div>
-        <div class="d-grid gap-2 d-md-block">
-            <button id="btn-guardar" class="btn btn-primary" type="submit">Guardar</button>
+
+        <div id="btn-buscar-por-nombre-mnu-desplegable" class="btn-mnu-desplegable">
+            <button><span>Buscar por nombre </span>
+                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+            </button>
         </div>
 
+        <div id="btn-buscar-por-rut-mnu-desplegable" class="btn-mnu-desplegable">
+            <button><span>Buscar por rut </span>
+                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+        <div id="btn-listar-por-empresa-mnu-desplegable" class="btn-mnu-desplegable">
+            <button><span>Listar por empresa </span>
+                <img class="icono-mnu-desplegable" src="/icon/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+        
+        <hr>
     </div>
-    <div class="contain-table">
-        <table class="table table-striped text-center">
-            <thead>
-                <tr>
-                    <th>N°</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Rut</th>
-                    <th>Empresa</th>
-                    <th>Entrada</th>
-                    <th>Salida</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>Juan</td>
-                    <td>Pérez</td>
-                    <td>12.345.678-9</td>
-                    <td>ACME Ltda</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>005</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
 
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>María</td>
-                    <td>Gómez</td>
-                    <td>11.222.333-4</td>
-                    <td>SoftChile</td>
-                    <td>08:30</td>
-                    <td>17:30</td>
-                </tr>
-            </tbody>
-        </table>
+    <!---------------- BTN MENU DESPLEGABLE ---------------->
+
+    <div class="contain-main">
+
+        <div class="contenedor-menu">
+            <button id="btn-menu" class="btn-menu-desplegable" ><img class="icono-menu" src="/icon/reorder-four-outline.svg" alt=""></button>
+        </div>
+
+        <!---------------- FORMULARIO DE ENTRADA ---------------->
+
+        <div class="contain-data">
+
+            <div class="formulario">
+                
+                <div class="fila"> 
+                    <label>Nombre</label>
+                    <input type="text" required="true">
+                </div>
+                <div class="fila"> 
+                    <label>Apellido</label>
+                    <input type="text" required="true">
+                </div>
+                <div class="fila"> 
+                    <label>Rut</label>
+                    <input type="text" required="true">
+                </div>
+                <div class="fila"> 
+                    <label>Empresa</label>
+                    <input type="text" required="true">
+                </div>
+                <div class="fila">
+                    <label>ID</label>
+                    <input type="text" required="true">
+                </div>
+                
+            </div>
+            <div class="d-grid gap-2 d-md-block">
+                <button id="btn-guardar" class="btn btn-primary" type="submit">Guardar</button>
+            </div>
+
+        </div>
+
+        <!---------------- TABLA DE DATOS ---------------->
+
+
+        <div class="contain-table">
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Rut</th>
+                        <th>Empresa</th>
+                        <th>Entrada</th>
+                        <th>Salida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>12.345.678-9</td>
+                        <td>ACME Ltda</td>
+                        <td>08:30</td>
+                        <td>17:30</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>María</td>
+                        <td>Gómez</td>
+                        <td>11.222.333-4</td>
+                        <td>SoftChile</td>
+                        <td>08:30</td>
+                        <td>17:30</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
     
