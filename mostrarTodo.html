@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,42 +74,34 @@
 
         <div class="contain-data">
 
-            <h2>Ingresar Persona</h2>
+            <h2>Mostrar Todo</h2>
 
             <div class="formulario">
                 
                 <div class="fila"> 
                     <label>Nombre</label>
-                    <input id="input-nombre" type="text" required="true">
+                    <input id="input-nombre" type="text" required="true" disabled="true">
                 </div>
                 <div class="fila"> 
                     <label>Apellido</label>
-                    <input id="input-apellido" type="text" required="true">
+                    <input id="input-apellido" type="text" required="true" disabled="true">
                 </div>
                 <div class="fila"> 
                     <label>Rut</label>
-                    <input id="input-rut" type="text" required="true">
+                    <input id="input-rut" type="text" required="true" disabled="true">
                 </div>
                 <div class="fila"> 
                     <label>Empresa</label>
-                    <input id="input-empresa" type="text" required="true">
+                    <input id="input-empresa" type="text" required="true" disabled="true">
                 </div>
                 <div class="fila">
                     <label>ID</label>
-                    <input id="input-ID" type="number" required="true">
-                </div>
-                <div class="fila">
-                    <label>Entrada</label>
-                    <input id="input-entrada" type="time" required="false">
-                </div>
-                <div class="fila">
-                    <label>Salida</label>
-                    <input id="input-salida" type="time" required="false">
+                    <input id="input-ID" type="number" required="true" disabled="true">
                 </div>
                 
             </div>
             <div class="d-grid gap-2 d-md-block">
-                <button id="btn-guardar-form" class="btn btn-primary" type="button">Guardar</button>
+                <button id="btn-mostrar-todo" class="btn btn-primary" type="button">Mostrar</button>
             </div>
 
         </div>
@@ -116,7 +110,7 @@
 
 
         <div class="contain-table">
-            <table class="table table-striped text-center">
+            <table id="tabla-usuarios" class="table table-striped text-center">
                 <thead>
                     <tr>
                         <th>N°</th>
@@ -124,16 +118,34 @@
                         <th>Apellido</th>
                         <th>Rut</th>
                         <th>Empresa</th>
+                        <th>ID</th>
                         <th>Entrada</th>
                         <th>Salida</th>
                     </tr>
                 </thead>
                 <tbody>
+
                 </tbody>
             </table>
         </div>
     </div>
 </body>
 <script src="/src/js/mnu_desplegable.js"></script>
-<script src="src/js/guardarUsuario.js"></script>
+<script src="src/js/mostrarTodo.js"></script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

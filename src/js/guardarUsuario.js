@@ -8,7 +8,9 @@ document.getElementById('btn-guardar-form').addEventListener('click', () => {
         ap_user: document.getElementById('input-apellido').value,
         rut_user: document.getElementById('input-rut').value,
         emp_user: document.getElementById('input-empresa').value,
-        id_trabajo_user: parseInt(document.getElementById('input-ID').value)
+        id_trabajo_user: parseInt(document.getElementById('input-ID').value),
+        entrada_user: document.getElementById('input-entrada').value || null,
+        salida_user: document.getElementById('input-salida').value || null
 
     }
 

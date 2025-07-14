@@ -39,15 +39,33 @@ document.addEventListener('click', (e) => {
 // ---------------------- NAVEGAR ----------------------
 
 
+
 const btn_guardar_mnu_desplegable = document.getElementById('btn-guardar-mnu-desplegable');
+const btn_buscar_por_nombre_mnu_desplegable = document.getElementById('btn-buscar-por-nombre-mnu-desplegable');
+const btn_mostrar_todo_mnu_desplegable = document.getElementById('btn-mostrar-todo-mnu-desplegable');
+const btn_buscar_por_rut_mnu_desplegable = document.getElementById('btn-buscar-por-rut-mnu-desplegable');
 
 document.addEventListener('click', (e) => {
 
     if (btn_guardar_mnu_desplegable.contains(e.target)) {
-        window.location.href = 'buscar_por_nombre.html';
+        window.location.href = 'Guardar.html';
+    }
+
+    if (btn_buscar_por_nombre_mnu_desplegable.contains(e.target)) {
+        window.location.href = 'buscarPorNombre.html';
+    }
+
+    if (btn_mostrar_todo_mnu_desplegable.contains(e.target)) {
+        window.location.href = 'mostrarTodo.html';
+    }
+
+    if (btn_buscar_por_rut_mnu_desplegable.contains(e.target)) {
+        window.location.href = 'buscarPorRut.html';
     }
 
 });
+
+
 
 
 
