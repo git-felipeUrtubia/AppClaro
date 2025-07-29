@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# FRONTEND
+FRONTED/node_modules/
+FRONTED/dist/
+FRONTED/.env
