@@ -1,0 +1,121 @@
+
+html {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 9em;
+    background-color: rgb(170, 170, 170);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    border-bottom: 2px solid rgb(136, 132, 132);
+}
+
+body {
+    
+    background-color: rgb(234, 234, 243);
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --------------- HEADER --------------- */
+
+.contain-btn-menu {
+    width: 2.8%;
+    height: 22%;
+    margin-left: 5%;
+}
+
+.contain-btn-menu button {
+    all: unset;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px;
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+.contain-btn-menu button:hover {
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.contain-logo-claro {
+    margin-right: 5%;
+}
+
+/* --------------- BODY --------------- */
+.form-ingresarPersonas {
+    background-color: rgb(199, 199, 199);
+    width: 30em;
+    height: 12em;
+
+    margin: 5% 7%;
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.40);
+}
+
+.datos-ingresarPersonas {
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 8px;
+}
+
+.datos-ingresarPersonas div {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    gap: 20px;
+
+}
+
+.datos-ingresarPersonas div input {
+    all: unset;
+    font-size: 14px;
+    background-color: white;
+
+    padding-left: 4%;
+
+    border: 1px;
+    border-radius: 6px;
+}
+
+.table th,
+.table td {
+    width: 10em;
+    text-align: center;
+}

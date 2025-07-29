@@ -1,0 +1,114 @@
+.menu-desplegable {
+    position: fixed;
+    z-index: 1000;
+
+    
+    height: 100%;
+    left: 0;
+
+    padding: 12px;
+    border: 1px;
+    border-radius: 4px;
+
+    background: #AFC6C9;
+    background: linear-gradient(90deg, rgba(175, 198, 201, 1) 0%, rgba(175, 198, 201, 1) 50%, rgba(175, 198, 201, 1) 100%);
+    
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;  /* Animación siempre activa */
+}
+
+.icono-mnu-desplegable {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenedor-menu button {
+    margin-top: 40%;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #6e6e6e;
+    margin: 20px 0;
+}
+
+.btn-cerrar-mnu-desplegable {
+    width: 280px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+.btn-cerrar-mnu-desplegable button{
+    all: unset;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px;
+    border-radius: 8px;
+}
+
+.btn-cerrar-mnu-desplegable button:hover{
+    background-color: rgb(228, 228, 228);
+    transition: 0.3s;
+}
+
+.btn-mnu-desplegable {
+    width: 280px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-bottom: 8px;
+}
+
+.btn-mnu-desplegable button {
+    all: unset;
+}
+
+.btn-mnu-desplegable button span{
+    margin-left: 8px;
+}
+
+.btn-mnu-desplegable button {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px;
+    border-radius: 8px 3px 3px 8px;
+}
+
+.btn-mnu-desplegable button:hover {
+    
+    background-color: rgb(228, 228, 228);
+    transition: 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+

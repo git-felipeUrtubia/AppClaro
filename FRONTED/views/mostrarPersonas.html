@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/mostrarPersonas.css">
+    <link rel="stylesheet" href="../assets/css/mnu_desplegable.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="contain-btn-menu">
+            <button id="btn-mnu-desplegable">
+                <img src="../assets/icons/reorder-four-outline.svg" width="30" height="30">
+            </button>
+        </div>
+        <div class="contain-logo-claro">
+            <img src="../assets/img/logo_claro.png" alt="" width="100px">
+        </div>
+    </header>
+
+    <!--  -->
+    
+    <!---------------- MENU DESPLEGABLE ---------------->
+    
+    <div class="menu-desplegable">
+
+        <div class="btn-cerrar-mnu-desplegable" >
+            <span>Claro Chile — Av. Salto #100</span>
+            <button id="btn-cerrar-menu"><img class="icono-mnu-desplegable" src="../assets/icons/close-outline.svg" alt=""></button>
+        </div>
+
+        <hr>
+        
+        <div class="btn-mnu-desplegable" >
+            <button id="btn-guardar-mnu-desplegable"><span>Ingreso de Personal</span>
+                <img class="icono-mnu-desplegable" src="../assets/icons/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+        <div class="btn-mnu-desplegable">
+            <button id="btn-buscar-por-rut-mnu-desplegable"><span>Buscar por rut </span>
+                <img class="icono-mnu-desplegable" src="../assets/icons/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+        <div class="btn-mnu-desplegable">
+            <button id="btn-listar-por-empresa-mnu-desplegable"><span>Listar por empresa </span>
+                <img class="icono-mnu-desplegable" src="../assets/icons/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+        <div class="btn-mnu-desplegable">
+            <button id="btn-mostrar-todo-mnu-desplegable"><span>Mostrar todo</span>
+                <img class="icono-mnu-desplegable" src="../assets/icons/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+        
+        <div class="btn-mnu-desplegable">
+            <button id="btn-registrar-salida-mnu-desplegable"><span>Registrar Salida</span>
+                <img class="icono-mnu-desplegable" src="../assets/icons/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+        <hr>
+
+        <div class="btn-mnu-desplegable">
+            <button id="btn-descargar-excel"><span>Descargar Excel</span>
+                <img class="icono-mnu-desplegable" src="../assets/icons/chevron-forward-outline.svg" alt="">
+            </button>
+        </div>
+
+    </div>
+    
+    <!--  -->
+    
+    <div class="form-ingresarPersonas">
+        <h2><span>Mostrar Todo</span></h2>
+        
+        <div class="contain-btn-guardar">
+            <button id="btn-mostrar" class="btn btn-primary">
+                <span>Mostrar</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="contain-table">
+
+        <table id="table-personas" class="table">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Rut</th>
+                    <th>Empresa</th>
+                    <th>Patente</th>
+                    <th>ID</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ingreso de Datos -->
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+<script src="../assets/scripts/ui/buttons/btn_mnu_desplegable.js"></script>
+<script src="../assets/scripts/navegation/nav.js"></script>
+<script type="module" src="../assets/scripts/ui/buttons/btnMostrarTodo.js"></script>
+<script type="module" src="../assets/scripts/ui/buttons/btnEliminarPersona.js"></script>
+<script src="../assets/scripts/ui/buttons/btnDescargarExcel.js"></script>
+</html>
+
+
+
+
+
+
+
